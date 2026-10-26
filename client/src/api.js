@@ -1,4 +1,4 @@
-const BASE = `${import.meta.env.VITE_API_URL || ''}/api/tasks`;
+const BASE = 'https://todo-taskmanager-diel.onrender.com/api/tasks';
 
 async function request(url, options = {}) {
   const res = await fetch(url, {
