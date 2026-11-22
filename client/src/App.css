@@ -193,3 +193,36 @@ select:focus {
   .task { flex-wrap: wrap; }
   .task-actions { width: 100%; justify-content: flex-end; }
 }
+
+/* Auth + account bar */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.account { display: flex; align-items: center; gap: 10px; }
+.account .email { color: var(--muted); font-size: 0.85rem; word-break: break-all; }
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+input[type='email']:focus,
+input[type='password']:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.switch { text-align: center; color: var(--muted); margin-top: 16px; }
+.link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
